@@ -41,7 +41,9 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="AC">
+                android:textColor="@color/white"
+                android:text="AC"
+                android:onClick="clearOnClick">
 
             </Button>
 
@@ -53,7 +55,7 @@
                 android:layout_weight="1"
                 android:background="@color/teal_200"
                 android:text="<---"
-
+                android:onClick="backSpaceOnClick"
                 >
 
             </Button>
@@ -65,7 +67,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="%">
+                android:text="%"
+                android:onClick="modularDivisionOnClick">
 
             </Button>
 
@@ -77,6 +80,7 @@
                 android:layout_weight="1"
                 android:background="@color/purple_500"
                 android:text="/"
+                android:onClick="devideOnClick"
                 android:textColor="@color/white">
 
             </Button>
@@ -96,7 +100,7 @@
                 android:layout_weight="1"
                 android:background="@color/teal_200"
                 android:text="7"
-                android:onClick="numberEvent">
+                android:onClick="sevenOnClick">
 
             </Button>
 
@@ -107,7 +111,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="8">
+                android:text="8"
+                android:onClick="eightOnClick">
 
             </Button>
 
@@ -118,7 +123,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="9">
+                android:text="9"
+                android:onClick="nineOnClick">
 
             </Button>
 
@@ -130,6 +136,7 @@
                 android:layout_weight="1"
                 android:background="@color/purple_500"
                 android:text="*"
+                android:onClick="multiplyOnClick"
                 android:textColor="@color/white">
 
             </Button>
@@ -148,7 +155,10 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="4"></Button>
+                android:text="4"
+                android:onClick="fourOnClick">
+
+            </Button>
 
             <Button
                 android:id="@+id/five"
@@ -157,7 +167,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="5">
+                android:text="5"
+                android:onClick="fiveOnClick">
 
             </Button>
 
@@ -168,7 +179,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="6">
+                android:text="6"
+                android:onClick="sixOnClick">
 
             </Button>
 
@@ -180,6 +192,7 @@
                 android:layout_weight="1"
                 android:background="@color/purple_500"
                 android:text="-"
+                android:onClick="minusOnClick"
                 android:textColor="@color/white">
 
             </Button>
@@ -198,7 +211,10 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="1"></Button>
+                android:text="1"
+                android:onClick="oneOnClick">
+
+            </Button>
 
             <Button
                 android:id="@+id/two"
@@ -207,7 +223,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="2">
+                android:text="2"
+                android:onClick="twoOnClick">
 
             </Button>
 
@@ -218,7 +235,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="3">
+                android:text="3"
+                android:onClick="threeOnClick">
 
             </Button>
 
@@ -230,6 +248,7 @@
                 android:layout_weight="1"
                 android:background="@color/purple_500"
                 android:text="+"
+                android:onClick="plusOnclick"
                 android:textColor="@color/white">
 
             </Button>
@@ -248,7 +267,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="+/-">
+                android:text="+/-"
+                android:onClick="positiveToNegative">
 
             </Button>
 
@@ -259,7 +279,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="0">
+                android:text="0"
+                android:onClick="zeroOnClick">
 
             </Button>
 
@@ -270,7 +291,8 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text=".">
+                android:text="."
+                android:onClick="dotOnClick">
 
             </Button>
 
@@ -282,6 +304,7 @@
                 android:layout_weight="1"
                 android:background="@color/purple_500"
                 android:text="="
+                android:onClick="equalsOnClick"
                 android:textColor="@color/white">
 
             </Button>
