@@ -76,7 +76,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="<---"
+                android:text="---"
                 android:onClick="backSpaceOnClick"
                 >
 
@@ -97,12 +97,12 @@
             <Button
                 android:id="@+id/divide"
                 android:layout_width="30pt"
-                android:layout_height="30pt"
+                android:layout_height="match_parent"
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/purple_500"
-                android:text="/"
                 android:onClick="devideOnClick"
+                android:text="/"
                 android:textColor="@color/white">
 
             </Button>
