@@ -4,25 +4,44 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView workingsView;
+    TextView resultsView;
+
+    String workings="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initTextViews();
+    }
+
+    private void initTextViews() {
+        workingsView = (TextView) findViewById(R.id.workingTextView);
+        resultsView = (TextView) findViewById(R.id.resultTextView);
+    }
+    private void setWorkings(String givenvalue){
+        workings = workings + givenvalue;
+        workingsView.setText(workings);
     }
 
     public void clearOnClick(View view) {
+        setWorkings("AC");
     }
 
     public void devideOnClick(View view) {
+        setWorkings("/");
     }
 
     public void sevenOnClick(View view) {
+        setWorkings("7");
     }
 
     public void eightOnClick(View view) {
+        setWorkings("8");
     }
 
     public void nineOnClick(View view) {
