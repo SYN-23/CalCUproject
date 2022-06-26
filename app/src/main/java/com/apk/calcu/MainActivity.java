@@ -5,6 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class MainActivity extends AppCompatActivity {
     TextView workingsView;
@@ -29,18 +34,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clearOnClick(View view) {
-
+        workingsView.setText("");
+        workings = "";
+        resultsView.setText("");
+        leftBracket = true;
     }
 
-    public void devideOnClick(View view) {
+    public void devideOnClick(View view)
+    {
         setWorkings("/");
     }
 
-    public void sevenOnClick(View view) {
+    public void sevenOnClick(View view)
+    {
         setWorkings("7");
     }
 
-    public void eightOnClick(View view) {
+    public void eightOnClick(View view)
+    {
         setWorkings("8");
     }
 
@@ -72,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
         setWorkings("3");
     }
 
-    public void positiveToNegative(View view) {
-
-    }
+//    public void positiveToNegative(View view) {
+//
+//    }
 
     public void zeroOnClick(View view) {
         setWorkings("0");
@@ -104,6 +115,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equalsOnClick(View view) {
+        Double result = null;
+        ScriptEngine engine = new ScriptEngineManager().getEngineByName("rhino");
 
+        try {
+            result = (double) engine.eval(workings);
+        }catch (ScriptException e)
+        {
+            Toast.makeText(this, "Invalid Input", Toast.LENGTH_SHORT).show();
+        }
+        if(result != null)
+            resultsView.setText(String.valueOf(result.doubleValue()));
+    }
+        boolean leftBracket = true;
+    public void bracketOnClick(View view) {
+        if(leftBracket) {
+            setWorkings("(");
+            leftBracket = false;
+        }
+        else{
+            setWorkings(")");
+            leftBracket = true;
+        }
     }
 }

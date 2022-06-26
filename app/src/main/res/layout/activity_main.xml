@@ -14,7 +14,7 @@
         android:paddingRight="30dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        android:text="working"
+        android:text=""
         android:gravity="right|center_vertical"
         android:textAlignment="textEnd"
         android:textSize="30sp"
@@ -26,7 +26,7 @@
         android:paddingRight="30dp"
         android:layout_weight="1"
         android:textColor="@color/black"
-        android:text="results"
+        android:text=""
         android:gravity="right|center_vertical"
         android:textSize="30sp"
         android:layout_gravity="end"
@@ -282,15 +282,16 @@
             android:layout_marginBottom="1pt">
 
             <Button
-                android:id="@+id/plus_minus"
+                android:id="@+id/bracket"
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:layout_marginLeft="1pt"
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="+/-"
-                android:onClick="positiveToNegative">
+                android:text="( )"
+                android:textColor="@color/blue"
+                android:onClick="bracketOnClick">
 
             </Button>
 
