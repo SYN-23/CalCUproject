@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         workingsView = (TextView) findViewById(R.id.workingTextView);
         resultsView = (TextView) findViewById(R.id.resultTextView);
     }
+
+
     private void setWorkings(String givenValue){
         workings = workings + givenValue;
         workingsView.setText(workings);
@@ -96,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void backSpaceOnClick(View view) {
+       String value=workingsView.getText().toString();
+       int length=value.length();
+       if (length>0){
+           //value=value.substring(0,value.length()-1);
+           workingsView.setText(value.substring(0,length-1));
+
+       }
     }
 
     public void modularDivisionOnClick(View view) {

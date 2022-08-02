@@ -9,17 +9,18 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/workingTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingRight="30dp"
-        android:layout_weight="1"
-        android:textColor="@color/black"
-        android:text=""
-        android:gravity="right|center_vertical"
-        android:textAlignment="textEnd"
-        android:textSize="30sp"
         android:layout_gravity="end"
-        android:id="@+id/workingTextView"/>
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="30dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -76,9 +77,9 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/teal_200"
-                android:text="---"
                 android:onClick="backSpaceOnClick"
-                >
+                android:text="Bksp"
+                android:textColor="@color/white">
 
             </Button>
 
