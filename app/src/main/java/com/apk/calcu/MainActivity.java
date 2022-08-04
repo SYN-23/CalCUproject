@@ -100,10 +100,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void backSpaceOnClick(View view) {
        String value=workingsView.getText().toString();
+
        int length=value.length();
        if (length>0){
-           //value=value.substring(0,value.length()-1);
-           workingsView.setText(value.substring(0,length-1));
+          workings=value.substring(0,value.length()-1);
+
+           workingsView.setText(workings);
+
 
        }
     }
